@@ -1,0 +1,151 @@
+/* Font
+spoqa han sans { font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+google font {font-family: 'Black Han Sans', sans-serif;}
+*/
+
+/*palette
+header: #1e90ff
+footer: #1564b2
+font in dark : #ffffff
+font in light : #191919
+
+others
+brown: #ce9178
+pale brown: #ebd3c9
+*/
+
+header {
+    margin: 0;
+    height: 170px;
+    background-color:#1e90ff;
+}
+
+header h1, h2 {
+    
+    color:#ffffff;
+    margin: 0;
+    padding-left:20px;
+}
+
+.wrapper {
+    min-height:1300px;
+    margin-top:4rem;
+    
+}
+
+/*footer*/
+footer {
+    height: 100px;
+    margin-top:-100px;
+    background-color:#1564b2;
+    color:#ffffff;
+    padding:0;
+    margin:0;
+}
+
+footer li {
+    font-size:12px;
+    line-height:1.2;
+    color:#ffffff;
+    font-family:'Spoqa Han Sans', 'Sans-serif';
+    list-style: none;
+    text-align:center;
+}
+
+.footer-title {
+    font-size:15px;
+    line-height:1.3;
+    color:#ffffff;
+    font-family:'Spoqa Han Sans', 'Sans-serif';
+    font-weight:bold;
+}
+
+footer .row {
+    padding-top:13px;
+}
+
+/* movie */
+
+.movie-info {
+    font-size:15px;
+    color:#191919;
+    line-height:1.24;
+}
+
+.movie-info li {
+    list-style:none;
+    text-align:center;
+}
+
+.movie-title {
+    text-align:center;
+    font-size:20px;
+    line-height:1.3;
+    font-weight:bold;
+}
+
+/* new */
+.new label{
+    margin-top:30px;
+    font-size:15px;
+    font-weight:bold;
+    line-height:1.3;
+    font-family:'Spoqa Han Sans', 'Sans-serif';
+    color:#191919;
+}
+
+.wrapper .container {
+    padding:0;
+}
+
+/* show */
+
+.show div {
+    font-size:15px;
+    font-family:'Spoqa Han Sans', 'Sans-serif';
+    line-height:1.25;
+    color:#191919;
+}
+
+.show-title {
+    font-size:35px!important;
+    font-family:'Black Han Sans', sans-serif!important;
+}
+
+.show-title-en {
+    font-size:18px!important;
+    font-weight:bold;
+    margin-bottom:1rem;
+}
+
+.show .row {
+    margin-top:10px;
+}
+
+.mybox {
+    padding:5px;
+    margin:0;
+    border: solid 1px #dddddd;
+    border-radius:18px;
+    height:15rem;
+    width:100%;
+    background-color:#eeeeee;
+    font-family:'Spoqa Han Sans', 'Sans-serif';
+    font-size:20px;
+    font-weight:bold;
+}
+
+.mybox:hover {
+    background-color:#aaaaaa;
+    transition:background-color;
+}
+
+.mybox-img {
+    height:220px!important;
+    width:160px!important;
+    margin:5px 5px;
+}
+
+.index-title {
+    font-size:30px;
+}

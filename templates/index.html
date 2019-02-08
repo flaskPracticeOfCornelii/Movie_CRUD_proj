@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+    
+    {% block content %}
+    <div class="container">
+        <div class="row">
+            
+            <a class="btn btn-primary mr-auto" href="/movies/new/">새 영화 등록</a>
+            
+        </div>
+        {% for d in data %}
+        <div class="row mt-2">
+            <div class="col-sm-9 mybox">
+                <a class="row" href="/movies/{{d.id}}/">
+                    <img src="{{d.poster_url}}" class="mybox-img col-sm-3"></img>
+                    <div class="col-sm-8">
+                        <div class="index-title">{{d.title}}</div>
+                        <div class="d-inline-block col-sm-4 p-0">개봉일: {{d.open_date}}</div>
+                        <div class="d-inline-block col-sm-4 pl-auto">평점: {{d.score}}</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+    
+    {% endblock %}

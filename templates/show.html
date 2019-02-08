@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+    <div class="container show">
+        <div class="row">
+            <div class="show-title">{{data.title}}</div>
+        </div>
+        <div class="row">
+            <div class="show-title-en">{{data.title_en}}</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 p-0">
+                <div>누적관람객: {{data.audience}}명</div>    
+            </div>
+            <div class="col-sm-3 p-0">
+                <div>개봉일: {{data.open_date}}</div>    
+            </div>
+            <div class="col-sm-3 p-0">
+                <div>장르: {{data.genre}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 p-0">
+                <div>관람등급: {{data.watch_grade}}</div>
+            </div>
+            <div class="col-sm-3 p-0">
+                <div>관객점수: {{data.score}}</div>
+            </div>
+            <div class="col-sm-3 p-0">
+                <div>포스터 URL: {{data.poster_url}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="p-0">상세설명: </div>
+        </div>
+        <div class="row">
+            <div class="p-0">{{data.description}}</div>
+        </div>
+        <div class="row">
+            <div><a href="/movies/" class="btn btn-primary">목록</a></div>
+            <div><a href="/movies/{{data.id}}/edit/" class="btn btn-success ml-2 mr-2">수정</a></div>
+            <div><a href="/movies/{{data.id}}/delete/" class ="btn btn-danger">삭제</a></div>
+            
+        </div>
+    </div>
+
+
+{% endblock %}

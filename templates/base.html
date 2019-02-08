@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <!--Spoqa Han sans-->
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <script type = "text/javascript" src="{{url_for('static',filename='script.js')}}" ></script>
+    <title>Movie! Movie!</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-1">Movie! Moive! Movie!</h1>
+        <h2 class="display-5">Find the hot!</h2>
+    </header>
+    <div class="wrapper">
+        
+        {% block content %}
+        
+        {% endblock %}
+    
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li class="footer-title">CRUD PRAC</li>
+                        <li>JMS</li>
+                        <li></li>
+                        <li>yeah</li>
+                        <li>yeah</li>
+                    </ul>
+                </div>
+                
+                <div class="col">
+                    <ul>
+                        <li class="footer-title">Contact US</li>
+                        <li>onelifexxxx@gmail.com</li>
+                        <li>xxx-xxxx-xxxx</li>
+                        <li>yeah</li>
+                        <li>yeah</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
